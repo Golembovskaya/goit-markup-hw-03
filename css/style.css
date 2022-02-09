@@ -132,7 +132,16 @@ body {
   font-size: 26px;
 }
 .navheader,
-.contacts,
+.contacts {
+  display: flex;
+  list-style: none;
+  border-style: none;
+}
+.navheader li {
+  background-color: tomato;
+  margin-right: 50px;
+}
+
 .images,
 .adress-list {
   list-style: none;
@@ -222,3 +231,14 @@ body {
   color: var(--main-footer-contacts);
 }
 /*Конец футера*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
