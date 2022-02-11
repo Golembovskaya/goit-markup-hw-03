@@ -13,6 +13,31 @@ body {
   font-family: var(--main-font-family);
   color: var(--btn-main-color-text);
 }
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/*.header-container {
+  justify-content: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid #ececec;
+}*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
 /*Начало Секции 1 студии*/
 .title {
   background: var(--backgraund-section);
@@ -121,6 +146,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  /* padding-top: 24px;
+  padding-bottom: 25px;*/
+}
 .logo-blue {
   color: var(--navigation-color);
   text-decoration: none;
@@ -131,17 +162,27 @@ body {
   text-decoration: none;
   font-size: 26px;
 }
+
 .navheader,
 .contacts {
   display: flex;
   list-style: none;
   border-style: none;
 }
-.navheader li {
-  background-color: tomato;
+.navheader .item {
+  display: block;
+  /*margin-left: 93px;*/
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   margin-right: 50px;
 }
-
+.navheader {
+  margin-left: 93px;
+}
+.navheader .item:last-child {
+  margin-right: 0;
+}
 .images,
 .adress-list {
   list-style: none;
@@ -156,6 +197,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .header-page:hover,
 .header-page:focus {
   color: var(--navigation-color);
@@ -163,7 +205,18 @@ body {
 .navigation {
   color: var(--btn-main-color-text);
 }
-.contact {
+.contacts .item-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-right: 50px;
+}
+
+.contacts .item-contact + .item-contact {
+  margin-right: 0;
+}
+.item-contact .contact {
   color: var(--secondary-text-color);
 }
 .contact:hover,
@@ -231,14 +284,3 @@ body {
   color: var(--main-footer-contacts);
 }
 /*Конец футера*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
