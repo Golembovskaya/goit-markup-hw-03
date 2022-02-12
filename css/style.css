@@ -34,21 +34,37 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li {
   padding: 0;
   margin: 0;
 }
 /*Начало Секции 1 студии*/
 .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  height: 600px;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
   background: var(--backgraund-section);
 }
 .title-first {
+  width: 696px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--btn-tittle);
   font-family: var(--main-font-family);
 }
@@ -64,6 +80,7 @@ ul {
   letter-spacing: 0.06em;
   border-style: none;
   border-radius: 4px;
+  padding: 10px 32px;
 }
 .btn:hover,
 .btn:focus {
@@ -72,7 +89,8 @@ ul {
 }
 /*Конец Секции 1 студии*/
 /*Начало Секции 2 студии*/
-.list-item .h3-list-title {
+.list-item-desc .h3-list-title {
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -80,7 +98,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.list-item .p-list-title {
+.list-item-desc .p-list-title {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -88,6 +106,20 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.list-item-desc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 94px;
+  list-style: none;
+}
+.list-title {
+  margin-right: 30px;
+}
+.list-title:last-child {
+  margin-right: 0;
+}
+
 /*Конец Секции 2 студии*/
 /*Начало Секции 3 студии*/
 .h2-list-title {
@@ -96,6 +128,20 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  text-align: center;
+  padding-top: 94px;
+}
+.list-item-busy {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  list-style: none;
+  margin-top: 50px;
+}
+.list-title-img + .list-title-img {
+  margin-left: 30px;
 }
 /*Конец Секции 3 студии*/
 /*Начало Секции 4 студии*/
@@ -108,6 +154,7 @@ ul {
   letter-spacing: 0.03em;
 }
 .p-list-title-name {
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -116,9 +163,23 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.list-item-team {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+
+  list-style: none;
+}
+.list-title-img + .list-title-img {
+  margin-left: 30px;
+}
+.box {
+  padding: 30px 0;
+}
 /*Конец Секции 4 студии*/
 /*Начало секции в портфолио*/
-.list-item {
+.list-item-pictu {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -126,6 +187,9 @@ ul {
   letter-spacing: 0.06em;
   text-shadow: none;
   list-style: none;
+}
+.list-item-pictu-text {
+  padding: 20px 24px;
 }
 .items {
   font-style: normal;
@@ -136,6 +200,69 @@ ul {
   color: var(--secondary-text-color);
   text-shadow: none;
 }
+/*Начало секции портфолио*/
+.button-modal {
+  display: flex;
+  justify-content: center;
+  padding-left: 495px;
+  margin-top: 100px;
+  margin-bottom: 34px;
+
+  list-style: none;
+  border-style: none;
+  font-family: var(--main-font-family);
+}
+.modal-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--btn-main-color-text);
+  text-decoration: none;
+  font-family: inherit;
+  border-style: none;
+  text-shadow: none;
+  border-radius: 4px;
+}
+.button .current {
+  color: var(--btn-tittle);
+  background-color: var(--btn-background);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--navigation-color);
+  color: var(--btn-tittle);
+  font-family: inherit;
+}
+.button {
+  padding-top: 94px;
+}
+.filter-btn + .filter-btn {
+  margin-left: 8px;
+}
+.modal-btn {
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: transparent;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 65px;
+  margin-right: -15px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.images-list {
+  flex-basis: calc((100%-3 * 30) / 3);
+  padding-top: 34px;
+  margin-bottom: 30px;
+}
+/*Конец секции портфолио*/
 /*Конец секции в портфолио*/
 /*Шапка студия и портфолио начало*/
 .header .nav,
@@ -178,7 +305,7 @@ ul {
   margin-right: 50px;
 }
 .navheader {
-  margin-left: 93px;
+  margin-left: 92px;
 }
 .navheader .item:last-child {
   margin-right: 0;
@@ -212,7 +339,9 @@ ul {
 
   margin-right: 50px;
 }
-
+.contacts {
+  margin-left: auto;
+}
 .contacts .item-contact + .item-contact {
   margin-right: 0;
 }
@@ -227,38 +356,13 @@ ul {
   color: var(--navigation-color);
 }
 /*Шапка студия и портфолио конец*/
-/*Начало секции портфолио*/
-.button-modal {
-  list-style: none;
-  border-style: none;
-  font-family: var(--main-font-family);
-}
-.modal-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  color: var(--btn-main-color-text);
-  text-decoration: none;
-  font-family: inherit;
-  border-style: none;
-  text-shadow: none;
-  border-radius: 4px;
-}
-.button .current {
-  color: var(--btn-tittle);
-  background-color: var(--btn-background);
-}
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--navigation-color);
-  color: var(--btn-tittle);
-  font-family: inherit;
-}
 
-/*Конец секции портфолио*/
 /*Начало футера*/
 .main-footer {
+  margin: 0 auto;
+  padding: 60px 0 0 215px;
+  height: 252px;
+  width: 1200px;
   background-color: var(--backgraund-section);
 }
 .logo-white {
@@ -282,5 +386,12 @@ ul {
 .footer-mail,
 .footer-tel {
   color: var(--main-footer-contacts);
+}
+.adress-list {
+  display: flex;
+  flex-direction: column;
+}
+.address {
+  margin-top: 20px;
 }
 /*Конец футера*/
