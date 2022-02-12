@@ -48,7 +48,6 @@ li {
 
   text-align: center;
   height: 600px;
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 
@@ -136,11 +135,12 @@ li {
   justify-content: center;
   align-items: center;
   display: flex;
+  text-align: center;
 
   list-style: none;
   margin-top: 50px;
 }
-.list-title-img + .list-title-img {
+.list-title-imgs + .list-title-imgs {
   margin-left: 30px;
 }
 /*Конец Секции 3 студии*/
@@ -167,13 +167,16 @@ li {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 50px;
-
+  padding-top: 94px;
   list-style: none;
 }
-.list-title-img + .list-title-img {
-  margin-left: 30px;
+.list-title-imgs {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .box {
   padding: 30px 0;
 }
@@ -204,9 +207,7 @@ li {
 .button-modal {
   display: flex;
   justify-content: center;
-  padding-left: 495px;
-  margin-top: 100px;
-  margin-bottom: 34px;
+  margin: auto;
 
   list-style: none;
   border-style: none;
@@ -240,8 +241,7 @@ li {
 .filter-btn + .filter-btn {
   margin-left: 8px;
 }
-.modal-btn {
-  margin: 0 auto;
+.filter-btn {
   border-radius: 4px;
   padding: 6px 22px;
   border: transparent;
@@ -276,6 +276,8 @@ li {
 .nav {
   display: flex;
   align-items: center;
+  /* padding-top: 24px;
+  padding-bottom: 25px;*/
 }
 .logo-blue {
   color: var(--navigation-color);
@@ -357,9 +359,10 @@ li {
 
 /*Начало футера*/
 .main-footer {
-  /*margin: 0 auto;
-  width: 1200px;*/
+  margin: 0 auto;
   padding: 60px 0;
+  /* height: 252px;
+  width: 1200px;*/
   background-color: var(--backgraund-section);
 }
 .logo-white {
