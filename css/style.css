@@ -276,8 +276,6 @@ li {
 .nav {
   display: flex;
   align-items: center;
-  /* padding-top: 24px;
-  padding-bottom: 25px;*/
 }
 .logo-blue {
   color: var(--navigation-color);
@@ -359,10 +357,9 @@ li {
 
 /*Начало футера*/
 .main-footer {
-  margin: 0 auto;
-  padding: 60px 0 0 215px;
-  height: 252px;
-  width: 1200px;
+  /*margin: 0 auto;
+  width: 1200px;*/
+  padding: 60px 0;
   background-color: var(--backgraund-section);
 }
 .logo-white {
@@ -391,7 +388,7 @@ li {
   display: flex;
   flex-direction: column;
 }
-.address {
+.adress {
   margin-top: 20px;
 }
 /*Конец футера*/
