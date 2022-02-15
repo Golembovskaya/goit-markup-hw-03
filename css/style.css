@@ -14,7 +14,7 @@ body {
   color: var(--btn-main-color-text);
 }
 .container {
-  display: flex;
+  /* display: flex;*/
   align-items: center;
   width: 1200px;
   padding: 0 15px;
@@ -272,6 +272,10 @@ li {
   letter-spacing: 0.03em;
 }
 .nav {
+  display: flex;
+  align-items: center;
+}
+.header-container {
   display: flex;
   align-items: center;
 }
