@@ -136,6 +136,9 @@ li {
 .list-title {
   flex-basis: calc((100%-4 * 30) / 4);
 }
+.list-busy {
+  padding-top: 0;
+}
 /*Конец Секции 3 студии*/
 /*Начало Секции 4 студии*/
 .h3-list-title-name {
@@ -197,9 +200,9 @@ li {
 }
 /*Начало секции портфолио*/
 .button-modal {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  margin: auto;
 
   list-style: none;
   border-style: none;
@@ -241,7 +244,7 @@ li {
 .images {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 65px;
+  margin-top: -15px;
   margin-right: -15px;
   margin-bottom: -15px;
   margin-left: -15px;
@@ -258,24 +261,6 @@ li {
 .images-list + .images-list {
   margin-left: 15px;
 }
-.button-modal {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  text-decoration: none;
-}
-.images {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 65px;
-  margin-right: -15px;
-  margin-bottom: -15px;
-  margin-left: -15px;
-}
-
-/* padding: 0 15px;
-  margin: 0 auto;
-  text-decoration: none;*/
 /*Конец секции портфолио*/
 /*Шапка студия и портфолио начало*/
 .header .nav,
